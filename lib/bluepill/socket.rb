@@ -51,8 +51,8 @@ module Bluepill
       end
     end
 
-    def socket_path(base_dir, name)
-      File.join(base_dir, 'socks', name + ".sock")
+    def self.socket_path(base_dir, name)
+      File.join(base_dir, 'sockets', name + ".sock")
     end
   end
 end

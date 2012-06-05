@@ -8,7 +8,7 @@ module Bluepill
     def initialize(options = {})
       self.log_file = options[:log_file]
       self.base_dir = options[:base_dir]
-      self.sockets_dir = File.join(base_dir, 'socks')
+      self.sockets_dir = File.join(base_dir, 'sockets')
       self.pids_dir = File.join(base_dir, 'pids')
 
       setup_dir_structure
